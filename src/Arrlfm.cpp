@@ -542,7 +542,7 @@ void Arrlfm<Estructura>::testing (char* file,char* nasap1, char *lectura_path) {
   strcat(path_csa_wt_rlmn,csa_wt_rlmn); 
 
   char path_output[100];   
-  strcpy(path_output,lectura_path); 
+  strcpy(path_output,"./"); 
   strcat(path_output,file); 
   strcat(path_output,out_path); 
      

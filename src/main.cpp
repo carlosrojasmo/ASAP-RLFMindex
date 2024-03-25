@@ -397,7 +397,7 @@ int main(int argc, char *argv[]) {
   // ARRLFM --------------------------------------------------------
   // S18 || RLMN  
   if(tipo == 100){
-    char *nasap1 = "ARRLFM_S18_RLMN(INT)s_2";
+    char *nasap1 = "ARRLFM_S18_RLMN(INT)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -411,7 +411,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -421,7 +421,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }
   if(tipo == 101){
-    char *nasap1 = "ARRLFM_S18_AP(RLMN)s_2";
+    char *nasap1 = "ARRLFM_S18_AP(RLMN)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -435,7 +435,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -446,7 +446,7 @@ int main(int argc, char *argv[]) {
   }
 
   if(tipo == 102){
-    char *nasap1 = "ARRLFM_S18_RLMN(AP)s_2";
+    char *nasap1 = "ARRLFM_S18_RLMN(AP)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -460,7 +460,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -470,7 +470,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }
   if(tipo == 103){
-    char *nasap1 = "ARRLFM_S18_RLMNs_2";
+    char *nasap1 = "ARRLFM_S18_RLMNs";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -484,7 +484,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -497,7 +497,7 @@ int main(int argc, char *argv[]) {
 
   // RLE || RLMN 
   if(tipo == 300){
-    char *nasap1 = "ARRLFM_RLE_RLMN(INT)s_2";
+    char *nasap1 = "ARRLFM_RLE_RLMN(INT)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -511,7 +511,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -521,7 +521,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }
   if(tipo == 301){
-    char *nasap1 = "ARRLFM_RLE_AP(RLMN)s_2";
+    char *nasap1 = "ARRLFM_RLE_AP(RLMN)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -535,7 +535,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -545,7 +545,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }
   if(tipo == 302){
-    char *nasap1 = "ARRLFM_RLE_RLMN(AP)s_2";
+    char *nasap1 = "ARRLFM_RLE_RLMN(AP)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -559,7 +559,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -571,7 +571,7 @@ int main(int argc, char *argv[]) {
 
 
   if(tipo == 1000){
-    char *nasap1 = "ARRLFM_18_RL(4,AP)s_2";
+    char *nasap1 = "ARRLFM_18_RL(4,AP)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -588,7 +588,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -600,7 +600,7 @@ int main(int argc, char *argv[]) {
      
   } 
   if(tipo == 1001){
-    char *nasap1 = "ARRLFM_18_RL(16,AP)s_2";
+    char *nasap1 = "ARRLFM_18_RL(16,AP)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -615,7 +615,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -626,7 +626,7 @@ int main(int argc, char *argv[]) {
   } 
 
   if(tipo == 1002){
-    char *nasap1 = "ARRLFM_18_RL(32,AP)s_2";
+    char *nasap1 = "ARRLFM_18_RL(32,AP)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -641,7 +641,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -652,7 +652,7 @@ int main(int argc, char *argv[]) {
   } 
 
   if(tipo == 1003){
-    char *nasap1 = "ARRLFM_18_RL(4,GMR)s_2";
+    char *nasap1 = "ARRLFM_18_RL(4,GMR)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -667,7 +667,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -678,7 +678,7 @@ int main(int argc, char *argv[]) {
   } 
 
   if(tipo == 1004){
-    char *nasap1 = "ARRLFM_18_RL(16,GMR)s_2";
+    char *nasap1 = "ARRLFM_18_RL(16,GMR)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -693,7 +693,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -703,7 +703,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
   if(tipo == 1005){
-    char *nasap1 = "ARRLFM_18_RL(32,GMR)s_2";
+    char *nasap1 = "ARRLFM_18_RL(32,GMR)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -718,7 +718,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -730,7 +730,7 @@ int main(int argc, char *argv[]) {
 
 
   if(tipo == 1006){
-    char *nasap1 = "ARRLFM_RE_RL(4,AP)s_2";
+    char *nasap1 = "ARRLFM_RE_RL(4,AP)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -745,7 +745,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -756,7 +756,7 @@ int main(int argc, char *argv[]) {
   } 
 
   if(tipo == 1007){
-    char *nasap1 = "ARRLFM_RE_RL(16,AP)s_2";
+    char *nasap1 = "ARRLFM_RE_RL(16,AP)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -771,7 +771,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -781,7 +781,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
   if(tipo == 1008){
-    char *nasap1 = "ARRLFM_RE_RL(32,AP)s_2";
+    char *nasap1 = "ARRLFM_RE_RL(32,AP)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -796,7 +796,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -806,7 +806,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
   if(tipo == 1009){
-    char *nasap1 = "ARRLFM_RE_RL(4,GMR)s_2";
+    char *nasap1 = "ARRLFM_RE_RL(4,GMR)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -821,7 +821,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -831,7 +831,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
   if(tipo == 1010){
-    char *nasap1 = "ARRLFM_RE_RL(16,GMR)s_2";
+    char *nasap1 = "ARRLFM_RE_RL(16,GMR)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -846,7 +846,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -857,7 +857,7 @@ int main(int argc, char *argv[]) {
   } 
 
   if(tipo == 1011){
-    char *nasap1 = "ARRLFM_RE_RL(32,GMR)s_2";
+    char *nasap1 = "ARRLFM_RE_RL(32,GMR)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -872,7 +872,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,lectura_path);
+    strcpy(path_mem,"./");
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
