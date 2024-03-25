@@ -55,11 +55,7 @@ int main(int argc, char *argv[]) {
   
   char* file = argv[1];
   int tipo = stoi(argv[2]);
-  int lista_pruebas[]={100,101,102,103,300,301,302,303,1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011};
-  for (int iterator = 0; iterator < sizeof(lista_pruebas) / sizeof(lista_pruebas[0]); ++iterator){
-  tipo=lista_pruebas[iterator];
-  cout<<"Prueba: "<<tipo<<endl;
-  char *lectura_path = "./Lectura/Resultados/"; /* CARPETA QUE CONTIENE TEXTOS */ 
+  char *lectura_path = "/data/pizzachili/Resultados/"; /* CARPETA QUE CONTIENE TEXTOS */ 
   //char *lectura_path = "/root/data/"; /* CARPETA QUE CONTIENE TEXTOS */ 
   char path_asap1[100];           
   char path_asapfolder[100];           
@@ -583,7 +579,7 @@ int main(int argc, char *argv[]) {
     strcpy(path_asapfolder,path_output);
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
-    fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+    fs::create_directories(path_asapfolder); // Crear carpeta si no existe 
     //Baseline< rl_runs<32,wt_gmr<> > >    TWA(path_bin,bwt,civ); 
     //Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,2); 
     Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>> , uint64_t , rl_runs<4,wt_ap<> > > >  TWA(path_bin,bwt,civ,2);  
@@ -888,8 +884,8 @@ int main(int argc, char *argv[]) {
 
   //TWA.getBVs(); 
   
+  return 0;
+}
 
-}
-return 0;
-}
+
 

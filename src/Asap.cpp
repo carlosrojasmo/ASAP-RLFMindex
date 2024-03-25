@@ -141,7 +141,6 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
   IntType* s;
   unordered_map<unsigned, unsigned> s_indexes;
   Uflag = flag;
-  cout<<"Flag: "<< Uflag<<endl;
   unordered_map<unsigned, int_vector<>> s_vectors;
   unordered_map<unsigned, bit_vector> temp_bit_vectors;
 
@@ -383,12 +382,12 @@ unsigned Asap<BitVectorClass, IntType,  WaveletClass>::rank ( unsigned position 
   int l;
   unsigned n;
   if (Uflag==1){
-    uint64_t p = ceil(log2((double)text_length));
+    uint64_t p = ceil(log2((double)text_length))/2;
     l = floor(target/((ceil(freq.size()/p))));
     n = target%((uint64_t)ceil(freq.size()/p));
   }
   else if (Uflag==2){
-    uint64_t p = ceil(log2((double)text_length));
+    uint64_t p = ceil(log2((double)text_length))/2;
     l = floor(target%p);
     n = floor((double)target/p);
   }
@@ -452,7 +451,10 @@ IntType* Asap<BitVectorClass, IntType, WaveletClass>::waccess ( unsigned start, 
 
 template<class BitVectorClass, class IntType, class WaveletClass>
 unsigned long Asap<BitVectorClass, IntType, WaveletClass>::size () {
-  //unsigned long sum = m->size();
+  if(Uflag==3){
+    unsigned long sum = m->size();
+  }
+  
   unsigned long sum;
   for ( auto &x: s_wt_trees )
     if ( x.second.sigma > 1 )
@@ -562,8 +564,6 @@ tuple<IntType*, unsigned,unsigned, unordered_map<IntType, unsigned>,unordered_ma
     
   for ( unsigned i = 0; i < v_aux.size(); i++ )
     freq[new_buffer[i]]++;
-  cout<<"length: "<<length<<endl;
-  cout<<"new_lenght: "<<v_aux.size()<<endl;
   return make_tuple (buffer, v_aux.size(),length, freq,fullfreq);
   
   

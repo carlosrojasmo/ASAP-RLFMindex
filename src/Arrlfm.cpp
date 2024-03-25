@@ -229,7 +229,7 @@ Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, unsigne
     //pFile = fopen (file, "wb");
     //fwrite (buffer, sizeof(uint64_t), BWT.size(), pFile);
     //AWT = new Estructura("binario.bin", method); // Creamos nuestra estructura entregandole la BWT construida
-    int flag=2;
+    int flag=1;
     AWT = new Estructura(file, method,flag); // Creamos nuestra estructura entregandole la BWT construida*/
 }
 
