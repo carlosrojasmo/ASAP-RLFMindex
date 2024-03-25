@@ -159,7 +159,6 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
       temp_bit_vectors[i]= bit_vector(text_length+1, 0);
       s_vectors[i] = int_vector<>(s_vector[i].size()+1);
     }
-  cout<<"Inicializo t y s_vector"<<endl;
 
   // creacion de los bitvectors
   unsigned l;
@@ -173,7 +172,6 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
       s_vectors[l][s_indexes[l]++] = k;
     }
   }
-  cout<<"Termino de crear los bitvectors"<<endl;
   for ( auto &x: s_vectors )
     //if ( ! m->is_singleton(x.first) )
     construct_im(s_wt_trees[x.first], x.second, 0);
@@ -218,7 +216,6 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
       temp_bit_vectors[i]= bit_vector(text_length+1, 0);
       s_vectors[i] = int_vector<>(s_vector[i].size()+1);
     }
-  cout<<"Inicializo t y s_vector"<<endl;
 
   // creacion de los bitvectors
   unsigned l;
@@ -232,7 +229,6 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
       s_vectors[l][s_indexes[l]++] = k;
     }
   }
-  cout<<"Termino de crear los bitvectors"<<endl;
   for ( auto &x: s_vectors )
     //if ( ! m->is_singleton(x.first) )
         construct_im(s_wt_trees[x.first], x.second, 0);
