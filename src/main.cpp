@@ -411,7 +411,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -435,7 +435,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -460,7 +460,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -484,7 +484,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -511,7 +511,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -535,7 +535,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -559,7 +559,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -588,7 +588,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -615,7 +615,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -641,7 +641,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -667,7 +667,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -693,7 +693,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -718,7 +718,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -745,7 +745,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -771,7 +771,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -796,7 +796,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -821,7 +821,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -846,7 +846,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
@@ -872,7 +872,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
-    strcpy(path_mem,"./");
+    strcpy(path_mem,lectura_path);
     strcat(path_mem,file); 
     strcat(path_mem,"/Memoria/"); 
     strcat(path_mem,nasap1); 
