@@ -147,7 +147,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
   
   if (flag==1){
     tie(s, text_length, freq) = Asap::readfile(input_file);
-    uint64_t p = ceil(log2((double)text_length))/2;
+    uint64_t p = ceil(log2((double)text_length)/2);
     vector<uint8_t> t;
     vector<vector<uint64_t>> s_vector(p+1);
     for (uint64_t i = 0; i < text_length; i++) {
@@ -204,7 +204,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
   //cout << "FINALIZADO";
   else if (flag==2){
      tie(s, text_length, freq) = Asap::readfile(input_file);
-    uint64_t p = ceil(log2((double)text_length))/2;
+    uint64_t p = ceil(log2((double)text_length)/2);
     vector<uint8_t> t;
     vector<vector<uint64_t>> s_vector(p+1);
     for (uint64_t i = 0; i < text_length; i++) {
@@ -378,12 +378,12 @@ unsigned Asap<BitVectorClass, IntType,  WaveletClass>::rank ( unsigned position 
   int l;
   unsigned n;
   if (Uflag==1){
-    uint64_t p = ceil(log2((double)text_length))/2;
+    uint64_t p = ceil(log2((double)text_length)/2);
     l = floor(target/((ceil(freq.size()/p))));
     n = target%((uint64_t)ceil(freq.size()/p));
   }
   else if (Uflag==2){
-    uint64_t p = ceil(log2((double)text_length))/2;
+    uint64_t p = ceil(log2((double)text_length)/2);
     l = floor(target%p);
     n = floor((double)target/p);
   }
