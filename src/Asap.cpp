@@ -147,7 +147,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
   
   if (flag==1){
     tie(s, text_length, freq) = Asap::readfile(input_file);
-    uint64_t p = ceil(log2((double)text_length));
+    uint64_t p = ceil(log2((double)text_length))/2;
     vector<uint8_t> t;
     vector<vector<uint64_t>> s_vector(p+1);
     for (uint64_t i = 0; i < text_length; i++) {
@@ -204,7 +204,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
   //cout << "FINALIZADO";
   else if (flag==2){
      tie(s, text_length, freq) = Asap::readfile(input_file);
-    uint64_t p = ceil(log2((double)text_length));
+    uint64_t p = ceil(log2((double)text_length))/2;
     vector<uint8_t> t;
     vector<vector<uint64_t>> s_vector(p+1);
     for (uint64_t i = 0; i < text_length; i++) {
@@ -447,7 +447,7 @@ IntType* Asap<BitVectorClass, IntType, WaveletClass>::waccess ( unsigned start, 
 
 template<class BitVectorClass, class IntType, class WaveletClass>
 unsigned long Asap<BitVectorClass, IntType, WaveletClass>::size () {
-  unsigned long sum;
+  unsigned long sum=0;
   if(Uflag==3){
     sum = m->size();
   }
