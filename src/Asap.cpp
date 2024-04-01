@@ -448,7 +448,7 @@ IntType* Asap<BitVectorClass, IntType, WaveletClass>::waccess ( unsigned start, 
 template<class BitVectorClass, class IntType, class WaveletClass>
 unsigned long Asap<BitVectorClass, IntType, WaveletClass>::size () {
   unsigned long sum=0;
-  if(Uflag==3){
+  if(Uflag==3 || Uflag==0){
     sum = m->size();
   }
   for ( auto &x: s_wt_trees )

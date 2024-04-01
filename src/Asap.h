@@ -17,7 +17,7 @@ class Asap{
     unsigned text_length;
     std::unordered_map<IntType, unsigned> freq;
     std::unordered_map<IntType, unsigned> fullfreq;
-    int Uflag;
+    int Uflag=0;
 
     std::tuple<IntType*, unsigned, std::unordered_map<IntType, unsigned>> readfile(std::string);
     std::tuple<IntType*, unsigned,unsigned, std::unordered_map<IntType, unsigned>,unordered_map<IntType, unsigned>> readfileFlag(std::string, int);
