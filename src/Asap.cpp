@@ -148,11 +148,8 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
   if (flag==1){
     tie(s, text_length, freq) = Asap::readfile(input_file);
     uint64_t p = ceil(log2((double)text_length)/2);
-    vector<uint8_t> t;
     vector<vector<uint64_t>> s_vector(p+1);
     for (uint64_t i = 0; i < text_length; i++) {
-      
-      t.push_back(floor(s[i] / ((ceil(freq.size() / p)))));
       s_vector[floor(s[i] / ((ceil(freq.size() / p))))].push_back(floor(s[i] % ((uint64_t)ceil(freq.size() / p))));
     }
     for (uint64_t i = 0; i < p+1; i++) {
@@ -205,11 +202,8 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
   else if (flag==2){
      tie(s, text_length, freq) = Asap::readfile(input_file);
     uint64_t p = ceil(log2((double)text_length)/2);
-    vector<uint8_t> t;
     vector<vector<uint64_t>> s_vector(p+1);
     for (uint64_t i = 0; i < text_length; i++) {
-      
-      t.push_back(floor(s[i]%p));
       s_vector[floor(s[i]%p)].push_back(floor((double)s[i]/p));
     }
     for (uint64_t i = 0; i < p+1; i++) {
@@ -389,16 +383,12 @@ unsigned Asap<BitVectorClass, IntType,  WaveletClass>::rank ( unsigned position 
   }
   else{
     l = m->map(target);
-    n = m->rank(m->get_pos_by_char(target), l);
     unsigned k = (bit_vectors[l])->rank(position);
     if ( m->is_singleton(l) ) return k;
     unsigned c = m->rank(m->get_pos_by_char(target), l);
-    return s_wt_trees[l].rank(k, n);
+    return s_wt_trees[l].rank(k, c);
   }
   unsigned k = (bit_vectors[l])->rank(position);
-  //if ( m->is_singleton(l) ) return k;
-
-  //unsigned c = m->rank(m->get_pos_by_char(target), l);
   return s_wt_trees[l].rank(k, n);
 }
 
