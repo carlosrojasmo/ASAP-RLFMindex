@@ -230,12 +230,12 @@ unsigned M_WT<IntType>::select (unsigned target, unsigned  l) {
 
 template<class IntType>
 unsigned long M_WT<IntType>::size () {
-  unsigned long sigma = m_map->size();
-  unsigned long size_of_m_map = sigma * ( 4 + sizeof(IntType) );
-  unsigned long size_of_m_conversor = sigma * sizeof(IntType);
-  unsigned long size_of_m_rconversor = sigma * ( 4 + sizeof(IntType) );
+  // unsigned long sigma = m_map->size();
+  // unsigned long size_of_m_map = sigma * ( 4 + sizeof(IntType) );
+  // unsigned long size_of_m_conversor = sigma * sizeof(IntType);
+  // unsigned long size_of_m_rconversor = sigma * ( 4 + sizeof(IntType) );
 
-  return size_in_bytes(m_wavelet_tree) + size_of_m_map + size_of_m_conversor + size_of_m_rconversor;
+  return size_in_bytes(m_wavelet_tree); //+ size_of_m_map + size_of_m_conversor + size_of_m_rconversor;
 }
 
 template<class IntType>
