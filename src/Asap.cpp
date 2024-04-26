@@ -438,14 +438,27 @@ IntType* Asap<BitVectorClass, IntType, WaveletClass>::waccess ( unsigned start, 
 template<class BitVectorClass, class IntType, class WaveletClass>
 unsigned long Asap<BitVectorClass, IntType, WaveletClass>::size () {
   unsigned long sum=0;
+  unsigned long sum_s_wt=0;
+  unsigned long sum_bv=0;
   if(Uflag==3 || Uflag==0){
     sum = m->size();
+    cout<<"m_size: "<<m->size()<<endl;
   }
   for ( auto &x: s_wt_trees )
-    if ( x.second.sigma > 1 )
+  {
+    if ( x.second.sigma > 1 ){
       sum += size_in_bytes(x.second);
-  for ( auto &x: bit_vectors )
+      sum_s_wt += size_in_bytes(x.second);
+    }
+  }
+  for ( auto &x: bit_vectors ){
     sum += (x.second)->size();
+    sum_bv += (x.second)->size();
+  }
+  cout<<"sum_s_wt: "<<sum_s_wt<<endl;
+  cout<<"sum_bv: "<<sum_bv<<endl;
+    
+  
   return sum;
 
   /*unsigned long sum = m->size();
